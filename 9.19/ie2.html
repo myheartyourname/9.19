@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src='ie2.js'></script>
+</head>
+<body>
+	
+	<div class="one">
+		<div class="box"></div>
+	</div>
+	<div class="box"></div>
+	<div id="one"></div>
+	<script>
+		window.onload=function(){
+			// var box=getClass('box');
+			$('#one').innerHTML='ID';
+			var hn=$('div');
+			console.log(hn);
+			var hm=$('.one');
+			$('.one')[0].innerHTML='CLASSNAME';
+			// console.log(hm);
+		}
+	</script>
+</body>
+</html>

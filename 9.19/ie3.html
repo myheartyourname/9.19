@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="ie3.js"></script>
+</head>
+<body>
+	<div id="one"></div>
+	<div class="one">
+		<div class="box"></div>
+	</div>
+	<div class="box"></div>
+	<script>
+		window.onload=function(){
+		    var one=getClass('one');
+		    var box=getClass('box',one[0]);
+		    for (var i=0;i<box.length;i++){
+		    	box[i].innerHTML='one里的box';
+		    }
+	    }    
+	</script>
+</body>
+</html>

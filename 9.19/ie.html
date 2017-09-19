@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src='ie.js'></script>
+</head>
+<body>
+	<div class="box"></div>
+	<div class="box box1"></div>
+	<div class="box2 box3"></div>
+	<div class="box box2"></div>
+	<div class="box1"></div>
+	<script>
+		window.onload=function(){
+			var box=getClass('box');
+			for (var i=0;i<box.length;i++){
+				box[i].innerHTML='这是一个div';
+			}
+            console.log(box);
+		}
+	</script>
+</body>
+</html>
